@@ -1,3 +1,10 @@
 from django.contrib import admin
+from . import models
+class ImmobileImageInlineAdmin(admin.TabularInline):
+    model = models.ImmobileImage
+    extra = 0
 
-# Register your models here.
+class ImmobileAdmin(admin.ModelAdmin):
+    inlines = [ImmobileImageInlineAdmin]
+
+admin.site.register(models.Immobile, ImmobileAdmin)
