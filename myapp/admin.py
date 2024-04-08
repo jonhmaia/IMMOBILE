@@ -8,3 +8,5 @@ class ImmobileAdmin(admin.ModelAdmin):
     inlines = [ImmobileImageInlineAdmin]
 
 admin.site.register(models.Immobile, ImmobileAdmin)
+admin.site.register(models.Client)
+admin.site.register(models.RegisterLocation)

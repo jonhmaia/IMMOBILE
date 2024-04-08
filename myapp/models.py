@@ -50,6 +50,7 @@ class RegisterLocation(models.Model):
     create_at = models.DateField(default=datetime.now, blank=True)
     
     def __str__(self):
+        
         return "{} - {}".format(self.client, self.immobile)
     
     class Meta:
