@@ -1,0 +1,8 @@
+marcoso
+Maia1@J12 super user
+Comandos
+1- django- admin startproject nomE_projeto
+2- django - admin startapp app_nome
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
